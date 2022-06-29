@@ -25,6 +25,8 @@ class Game:
 
     def handle_events(self):
         for event in pygame.event.get():
+
+            # exits the game
             if event.type == pygame.QUIT:
                 self.game_state = GameState.ENDED
 
